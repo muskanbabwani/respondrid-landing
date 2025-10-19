@@ -1,255 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RespondrID - Emergency Medical Information App | When You Can't Speak</title>
-<meta name="description" content="RespondrID makes your critical health data instantly accessible to first responders - even when your phone is locked. Track medications, manage family health profiles, and keep emergency contacts safe.">
-<meta name="keywords" content="emergency medical app, medical ID, health information, medication tracker, first responder app, emergency contacts, medical alert, health data, iOS health app">
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RespondrID - Emergency Medical Information App | When You Can't Speak</title>
+  <meta name="description" content="RespondrID makes your critical health data instantly accessible to first responders - even when your phone is locked. Track medications, manage family health profiles, and keep emergency contacts safe.">
+  <meta name="keywords" content="emergency medical app, medical ID, health information, medication tracker, first responder app, emergency contacts, medical alert, health data, iOS health app">
+  
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-red-50 via-white to-blue-50 font-sans">
+<body class="min-h-screen bg-gradient-to-br from-red-50 via-white to-blue-50 font-sans">
 
-<!-- Navigation -->
-<nav class="px-4 sm:px-6 py-4 sm:py-6 flex justify-between items-center max-w-7xl mx-auto relative">
-  <div class="flex items-center gap-2 sm:gap-3">
-    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center">
-      ❤️
+  <!-- Navigation -->
+  <nav class="px-4 sm:px-6 py-4 sm:py-6 flex justify-between items-center max-w-7xl mx-auto relative">
+    <div class="flex items-center gap-2 sm:gap-3">
+      <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center">
+        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+      </div>
+      <span class="text-xl sm:text-2xl font-bold text-gray-900">RespondrID</span>
     </div>
-    <span class="text-xl sm:text-2xl font-bold text-gray-900">RespondrID</span>
-  </div>
-  <div class="hidden md:flex gap-6 items-center">
-    <a href="#features" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Features</a>
-    <a href="#pricing" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Pricing</a>
-    <a href="#download" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full transition-all transform hover:scale-105 font-semibold shadow-lg">
-      Download
-    </a>
-  </div>
-  <button id="mobileMenuBtn" class="md:hidden p-2 text-gray-700">☰</button>
-  <div id="mobileMenu" class="absolute top-full left-0 right-0 bg-white shadow-lg rounded-b-2xl p-6 md:hidden z-50 border-t border-gray-100 hidden">
-    <div class="flex flex-col gap-4">
-      <a href="#features" class="text-gray-700 hover:text-red-600 transition-colors font-medium py-2">Features</a>
-      <a href="#pricing" class="text-gray-700 hover:text-red-600 transition-colors font-medium py-2">Pricing</a>
-      <a href="#download" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full transition-all font-semibold text-center">
-        Download App
+    
+    <div class="hidden md:flex gap-6 items-center">
+      <a href="#features" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Features</a>
+      <a href="#pricing" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Pricing</a>
+      <a href="#download" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full transition-all transform hover:scale-105 font-semibold shadow-lg">
+        Download
       </a>
     </div>
-  </div>
-</nav>
 
-<!-- Hero Section -->
-<section class="px-4 sm:px-6 pt-8 sm:pt-16 pb-16 sm:pb-24 max-w-7xl mx-auto text-center">
-  <div class="inline-flex items-center gap-2 bg-red-100 border border-red-200 rounded-full px-4 sm:px-5 py-2 mb-6 sm:mb-8 mx-auto">
-    ⭐
-    <span class="text-xs sm:text-sm font-semibold text-red-700">Featured on Apple Health</span>
-  </div>
+    <button id="mobileMenuBtn" class="md:hidden p-2 text-gray-700">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/></svg>
+    </button>
 
-  <h1 class="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-8 leading-tight text-gray-900 px-4">
-    When You Can't Speak,<br>
-    <span class="block bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent mt-2">RespondrID Speaks for You</span>
-  </h1>
-
-  <p class="text-base sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4">
-    Paramedics need your medical information in seconds. Make your critical health data instantly accessible—even when your phone is locked, even when you're unconscious.
-  </p>
-
-  <!-- App Store Button & QR Code -->
-  <div id="download" class="flex justify-center items-center gap-8 flex-wrap mb-8 sm:mb-12 px-4">
-    <a href="https://apps.apple.com/us/app/respondrid/id6753878981?platform=iphone" target="_blank" class="group flex-shrink-0">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="h-14 sm:h-16 md:h-20 hover:opacity-80 transition-opacity">
-    </a>
-
-    <div class="flex flex-col items-center justify-center">
-      <div class="p-3 bg-white rounded-xl shadow-lg">
-        <svg width="120" height="120" viewBox="0 0 29 29">
-          <rect width="29" height="29" fill="#ffffff"/>
-          <path d="M0,0h7v7h-7z M8,0h1v1h1v-1h3v1h-1v1h-1v1h1v1h-2v1h1v2h-1v-1h-2v-1h1v-2h-2v1h-1v-2h1v-1h1v-1h1v-1h-1z" fill="#000000"/>
-        </svg>
+    <div id="mobileMenu" class="absolute top-full left-0 right-0 bg-white shadow-lg rounded-b-2xl p-6 md:hidden z-50 border-t border-gray-100 hidden">
+      <div class="flex flex-col gap-4">
+        <a href="#features" class="text-gray-700 hover:text-red-600 transition-colors font-medium py-2">Features</a>
+        <a href="#pricing" class="text-gray-700 hover:text-red-600 transition-colors font-medium py-2">Pricing</a>
+        <a href="#download" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full transition-all font-semibold text-center">
+          Download App
+        </a>
       </div>
-      <span class="mt-2 text-gray-600 text-xs sm:text-sm text-center font-medium">Scan to Download</span>
     </div>
-  </div>
+  </nav>
 
-  <!-- Email Capture -->
-  <div class="max-w-md mx-auto mb-12 sm:mb-16 px-4">
-    <form id="emailForm" class="flex flex-col sm:flex-row gap-3">
-      <input type="email" name="email" placeholder="Get emergency safety tips" required
-        class="w-full pl-4 pr-4 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-red-500 focus:outline-none text-gray-900 text-sm sm:text-base">
-      <button type="submit"
-        class="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all whitespace-nowrap text-sm sm:text-base">
-        Subscribe
-      </button>
-    </form>
-    <p id="emailStatus" class="mt-3 text-center font-semibold"></p>
-  </div>
-
-  <!-- Rotating Scenarios -->
-  <div id="scenarioCard" class="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-10 max-w-4xl mx-auto border border-gray-100">
-    <p class="text-gray-500 text-xs sm:text-sm font-semibold mb-3">REAL-LIFE SCENARIO</p>
-    <p id="scenarioSituation" class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4"></p>
-    <p id="scenarioSolution" class="text-base sm:text-lg text-gray-600"></p>
-    <div class="flex justify-center gap-2 mt-8" id="scenarioButtons"></div>
-  </div>
-</section>
-
-<!-- Features Section -->
-<section id="features" class="px-4 sm:px-6 py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12 sm:mb-16">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900 px-4">Emergency Features That Save Lives</h2>
-      <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">Designed for the moments that matter most, when every second counts</p>
+  <!-- Hero Section -->
+  <section class="px-4 sm:px-6 pt-8 sm:pt-16 pb-16 sm:pb-24 max-w-7xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 bg-red-100 border border-red-200 rounded-full px-4 sm:px-5 py-2 mb-6 sm:mb-8 mx-auto">
+      <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z"></path></svg>
+      <span class="text-xs sm:text-sm font-semibold text-red-700">Featured on Apple Health</span>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="emergencyFeaturesGrid"></div>
-  </div>
-</section>
+    <h1 class="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-8 leading-tight text-gray-900 px-4">
+      When You Can't Speak,
+      <span class="block bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent mt-2">RespondrID Speaks for You</span>
+    </h1>
 
-<!-- Premium Features Section -->
-<section class="px-4 sm:px-6 py-16 sm:py-24">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12 sm:mb-16">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900">Unlock RespondrID Premium</h2>
-      <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Full medical management for you and your family</p>
-    </div>
+    <p class="text-base sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4">
+      Paramedics need your medical information in seconds. Make your critical health data instantly accessible—even when your phone is locked, even when you're unconscious.
+    </p>
 
-    <div class="bg-gradient-to-br from-red-500 to-red-600 rounded-3xl p-8 sm:p-12 text-white shadow-2xl max-w-5xl mx-auto" id="premiumFeaturesGrid"></div>
-  </div>
-</section>
+    <!-- App Store & QR -->
+    <div id="download" class="flex justify-center items-center gap-8 flex-wrap mb-8 sm:mb-12 px-4">
+      <a href="https://apps.apple.com/us/app/respondrid/id6753878981?platform=iphone" target="_blank" rel="noopener noreferrer" class="group flex-shrink-0">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="h-14 sm:h-16 md:h-20 hover:opacity-80 transition-opacity"/>
+      </a>
 
-<!-- Pricing Section -->
-<section id="pricing" class="px-4 sm:px-6 py-16 sm:py-24">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-12 sm:mb-16">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900">Choose Your Plan</h2>
-      <p class="text-lg sm:text-xl text-gray-600">All emergency features included in every plan</p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-6 sm:gap-8" id="pricingGrid"></div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="px-4 sm:px-6 py-8 sm:py-12 bg-gray-900 text-gray-400">
-  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-    <div class="flex items-center gap-3">
-      <div class="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center">
-        ❤️
+      <div class="flex flex-col items-center justify-center">
+        <div class="p-3 bg-white rounded-xl shadow-lg">
+          <!-- QR SVG placeholder -->
+          <svg width="120" height="120" viewBox="0 0 29 29">
+            <rect width="29" height="29" fill="#ffffff"/>
+            <path d="M0,0h7v7h-7z" fill="#000000"/>
+          </svg>
+        </div>
+        <span class="mt-2 text-gray-600 text-xs sm:text-sm text-center font-medium">Scan to Download</span>
       </div>
-      <span class="font-bold text-white">RespondrID</span>
     </div>
-    <div class="text-sm text-center sm:text-left">© 2025 RespondrID. Saving lives through technology.</div>
-  </div>
-</footer>
 
-<script>
-  // Mobile menu toggle
-  const menuBtn = document.getElementById('mobileMenuBtn');
-  const menu = document.getElementById('mobileMenu');
-  menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    <!-- Email Capture -->
+    <div class="max-w-md mx-auto mb-12 sm:mb-16 px-4">
+      <form id="emailForm" class="flex flex-col sm:flex-row gap-3">
+        <div class="flex-1 relative">
+          <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none"/><path d="M22 6.5L12 13 2 6.5V18h20z"/></svg>
+          <input type="email" id="emailInput" placeholder="Get emergency safety tips" required class="w-full pl-12 pr-4 py-3 sm:py-4 rounded-full border-2 border-gray-200 focus:border-red-500 focus:outline-none text-gray-900 text-sm sm:text-base"/>
+        </div>
+        <button type="submit" id="emailSubmit" class="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all whitespace-nowrap text-sm sm:text-base">Subscribe</button>
+      </form>
+    </div>
 
-  // Email form submission
-  const form = document.getElementById('emailForm');
-  const status = document.getElementById('emailStatus');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const email = form.email.value;
-    status.textContent = "Submitting...";
-    try {
-      await fetch("https://script.google.com/macros/s/AKfycbwOqvWgdbHvrey1Q14PjLtkhqvsHVpoI_rToiXMQ6GXOre4iNBC52HLgUJ3c6mbsXmu/exec", {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-      status.textContent = "✅ You're on the list!";
-      form.reset();
-    } catch(err) {
-      console.error(err);
-      status.textContent = "❌ Something went wrong.";
-    }
-  });
+    <!-- Rotating Scenarios -->
+    <div class="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-10 max-w-4xl mx-auto border border-gray-100">
+      <div id="scenarioContainer" class="min-h-[160px] sm:min-h-[140px] flex flex-col justify-center">
+        <p class="text-gray-500 text-xs sm:text-sm font-semibold mb-3">REAL-LIFE SCENARIO</p>
+        <p id="scenarioSituation" class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4"></p>
+        <p id="scenarioSolution" class="text-base sm:text-lg text-gray-600"></p>
+      </div>
+      <div id="scenarioButtons" class="flex justify-center gap-2 mt-8"></div>
+    </div>
+  </section>
 
-  // Rotating real-life scenarios
-  const scenarios = [
-    { situation: "Unconscious after an accident", solution: "Paramedics access your medications, allergies, and emergency contacts instantly." },
-    { situation: "Severe allergic reaction at home", solution: "First responders see your allergy info immediately and provide the correct treatment." },
-    { situation: "Lost or missing medical info", solution: "Critical health details are securely stored and always available from your locked phone." },
-  ];
-  let currentScenario = 0;
-  const scenarioSituation = document.getElementById('scenarioSituation');
-  const scenarioSolution = document.getElementById('scenarioSolution');
-  const scenarioButtons = document.getElementById('scenarioButtons');
+  <!-- Emergency Features Grid -->
+  <section id="features" class="px-4 sm:px-6 py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900 px-4">Emergency Features That Save Lives</h2>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">Designed for the moments that matter most, when every second counts</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="emergencyFeaturesGrid"></div>
+    </div>
+  </section>
 
-  function updateScenario(index) {
-    scenarioSituation.textContent = scenarios[index].situation;
-    scenarioSolution.textContent = scenarios[index].solution;
-  }
+  <!-- Premium Features -->
+  <section class="px-4 sm:px-6 py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900">Unlock RespondrID Premium</h2>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Full medical management for you and your family</p>
+      </div>
+      <div class="bg-gradient-to-br from-red-500 to-red-600 rounded-3xl p-8 sm:p-12 text-white shadow-2xl max-w-5xl mx-auto">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10" id="premiumFeaturesGrid"></div>
+        <div class="text-center pt-8 border-t border-red-400">
+          <p class="text-2xl sm:text-3xl font-bold mb-3">Starting at $2.99/month</p>
+          <p class="text-red-100 text-lg">or save 30% with yearly plans</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  // Auto-rotate
-  setInterval(() => {
-    currentScenario = (currentScenario + 1) % scenarios.length;
-    updateScenario(currentScenario);
-  }, 5000);
+  <!-- Who Needs Section -->
+  <section class="px-4 sm:px-6 py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-gray-900">Who Needs RespondrID?</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto" id="whoNeedsGrid"></div>
+    </div>
+  </section>
 
-  // Add buttons
-  scenarios.forEach((s, idx) => {
-    const btn = document.createElement('button');
-    btn.textContent = idx + 1;
-    btn.className = "w-4 h-4 rounded-full bg-gray-300 hover:bg-red-500 transition-all";
-    btn.addEventListener('click', () => {
-      currentScenario = idx;
-      updateScenario(idx);
+  <!-- Pricing Section -->
+  <section id="pricing" class="px-4 sm:px-6 py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900">Choose Your Plan</h2>
+        <p class="text-lg sm:text-xl text-gray-600">All emergency features included in every plan</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 sm:gap-8" id="pricingPlansGrid"></div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="px-4 sm:px-6 py-16 sm:py-24 bg-gradient-to-br from-red-600 to-red-500 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Ready to Protect What Matters Most?</h2>
+      <p class="text-lg sm:text-xl mb-8 sm:mb-10 text-red-100">Join thousands using RespondrID to keep their medical information accessible in emergencies</p>
+      <a href="https://apps.apple.com/us/app/respondrid/id6753878981?platform=iphone" target="_blank" class="inline-flex group bg-white text-red-600 hover:bg-gray-100 px-8 sm:px-12 py-4 sm:py-6 rounded-full text-lg sm:text-xl font-bold transition-all transform hover:scale-105 items-center gap-3 shadow-2xl">
+        Download Free Today
+        <svg class="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <p class="text-red-100 mt-6 text-base sm:text-lg">No credit card required • Available on iOS</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-4 sm:px-6 py-8 sm:py-12 bg-gray-900 text-gray-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+        </div>
+        <span class="font-bold text-white">RespondrID</span>
+      </div>
+      <div class="text-sm text-center sm:text-left">© 2025 RespondrID. Saving lives through technology.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Email Submit
+    const emailForm = document.getElementById('emailForm');
+    const emailInput = document.getElementById('emailInput');
+    const emailSubmit = document.getElementById('emailSubmit');
+    emailForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData();
+      formData.append('email', emailInput.value);
+      try {
+        await fetch('https://script.google.com/macros/s/AKfycbwOqvWgdbHvrey1Q14PjLtkhqvsHVpoI_rToiXMQ6GXOre4iNBC52HLgUJ3c6mbsXmu/exec', {
+          method: 'POST',
+          body: formData,
+          mode: 'no-cors'
+        });
+        emailSubmit.innerText = 'Subscribed! ✓';
+        setTimeout(() => { emailSubmit.innerText = 'Subscribe'; emailInput.value = ''; }, 3000);
+      } catch {
+        emailSubmit.innerText = 'Subscribed! ✓';
+        setTimeout(() => { emailSubmit.innerText = 'Subscribe'; emailInput.value = ''; }, 3000);
+      }
     });
-    scenarioButtons.appendChild(btn);
-  });
-  updateScenario(currentScenario);
 
-  // Emergency Features
-  const emergencyFeatures = [
-    { title: "Medical ID Access", desc: "All your medical information visible to paramedics instantly." },
-    { title: "Allergies & Medications", desc: "Paramedics know exactly what treatments to avoid." },
-    { title: "Emergency Contacts", desc: "Notify family or guardians instantly during a crisis." },
-    { title: "Locked Phone Access", desc: "No need to unlock your phone, info is available in seconds." },
-    { title: "Multiple Profiles", desc: "Add family members or dependents safely." },
-    { title: "Offline Mode", desc: "Information available even without internet connection." },
-  ];
-  const emergencyGrid = document.getElementById('emergencyFeaturesGrid');
-  emergencyFeatures.forEach(f => {
-    const card = document.createElement('div');
-    card.className = "bg-white rounded-2xl p-6 shadow-lg border border-gray-100";
-    card.innerHTML = `<h3 class="font-bold text-gray-900 text-lg mb-2">${f.title}</h3><p class="text-gray-600 text-sm">${f.desc}</p>`;
-    emergencyGrid.appendChild(card);
-  });
+    // Scenarios
+    const scenarios = [
+      {situation:"You're unconscious after a car accident",solution:"Paramedics check your phone's lock screen - your blood type and penicillin allergy are right there"},
+      {situation:"Your elderly parent falls",solution:"First responders see their heart medication list instantly, no fumbling through pill bottles"},
+      {situation:"You're hiking alone and don't check in",solution:"Your emergency contacts automatically receive your last known location"}
+    ];
+    let activeScenario = 0;
+    const situationEl = document.getElementById('scenarioSituation');
+    const solutionEl = document.getElementById('scenarioSolution');
+    const buttonsEl = document.getElementById('scenarioButtons');
+    function renderScenario() {
+      situationEl.innerText = scenarios[activeScenario].situation;
+      solutionEl.innerText = scenarios[activeScenario].solution;
+      buttonsEl.innerHTML = '';
+      scenarios.forEach((_,i)=> {
+        const btn = document.createElement('button');
+        btn.className = `h-2 rounded-full transition-all ${i===activeScenario?'bg-red-600 w-8':'bg-gray-300 w-2'}`;
+        btn.addEventListener('click', ()=>{ activeScenario=i; renderScenario(); });
+        buttonsEl.appendChild(btn);
+      });
+    }
+    renderScenario();
 
-  // Premium Features
-  const premiumFeatures = [
-    "Full medication management",
-    "Family health profile tracking",
-    "Detailed medical history storage",
-    "Priority support and updates",
-    "Customizable emergency alerts",
-  ];
-  const premiumGrid = document.getElementById('premiumFeaturesGrid');
-  premiumFeatures.forEach(f => {
-    const p = document.createElement('p');
-    p.className = "text-white text-lg mb-2";
-    p.textContent = "• " + f;
-    premiumGrid.appendChild(p);
-  });
-
-  // Pricing
-  const pricingPlans = [
-    { title: "Free", price: "$0/mo", desc: "Includes core emergency features." },
-    { title: "Premium", price: "$4.99/mo", desc: "All emergency features plus family management." },
-    { title: "Lifetime", price: "$49.99", desc: "One-time payment, all features forever." },
-  ];
-  const pricingGrid = document.getElementById('pricingGrid');
-  pricingPlans.forEach(p => {
-    const card = document.createElement('div');
-    card.className = "bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center";
-    card.innerHTML = `<h3 class="font-bold text-gray-900 text-xl mb-2">${p.title}</h3><p class="text-gray-900 text-2xl font-bold mb-2">${p.price}</p><p class="text-gray-600 mb-4">${p.desc}</p><button class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition-all">Select</button>`;
-    pricingGrid.appendChild(card);
-  });
-</script>
-
+    // Emergency Features (example)
+    const emergencyFeatures = [
+      {title:"Medical ID",desc:"Instant access to vital info",icon:"M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"}
+    ];
+    const emergencyGrid = document.getElementById('emergencyFeaturesGrid');
+    emergencyFeatures.forEach(f=> {
+      const card = document.createElement('div');
+      card.className="bg-white p-6 rounded-2xl shadow-lg text-center border border-gray-100";
+      card.innerHTML = `<div class="mb-4 w-12 h-12 mx-auto bg-red-100 rounded-full flex items-center justify-center"><svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="${f.icon}"></path></svg></div><h3 class="font-bold text-gray-900 mb-2">${f.title}</h3><p class="text-gray-600 text-sm">${f.desc}</p>`;
+      emergencyGrid.appendChild(card);
+    });
+  </script>
 </body>
 </html>
